@@ -21,13 +21,13 @@ router.post('/add', function(req, res, next) {
     Post.create({
         name: req.body.name,
         phone: req.body.phone,
-        date: req.body.date,
+        dateBirthday: req.body.dateBirthday,
         gender: req.body.gender,
         email: req.body.email,      
     })
     .then(function() {
         console.log('Inscription saved!');
-        res.redirect("/form");
+        res.redirect("/list");
     }).catch(function(){
         res.send("Error in scription. Error: " + error);
     })

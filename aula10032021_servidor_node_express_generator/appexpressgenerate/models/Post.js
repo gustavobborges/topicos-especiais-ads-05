@@ -11,8 +11,8 @@ const Post = db.sequelize.define("post", {
         allowNull: false,
     },
 
-    date: {
-        type: db.Sequelize.DATE,
+    dateBirthday: {
+        type: db.Sequelize.DATEONLY,
         allowNull: false,
     },
 
